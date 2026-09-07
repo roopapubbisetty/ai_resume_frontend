@@ -58,7 +58,7 @@ class _ScreeningLoadingScreenState extends State<ScreeningLoadingScreen> {
             children: [
               Container(
                 padding: const EdgeInsets.all(24),
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: AppColors.primaryLight,
                   shape: BoxShape.circle,
                 ),

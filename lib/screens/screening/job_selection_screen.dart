@@ -75,7 +75,7 @@ class _JobSelectionScreenState extends State<JobSelectionScreen> {
                   const SizedBox(height: 20),
                   if (selectedResume != null)
                     Card(
-                      color: AppColors.primaryLight.withOpacity(0.5),
+                      color: AppColors.primaryLight.withValues(alpha: 0.5),
                       child: ListTile(
                         leading: const Icon(Icons.description_rounded, color: AppColors.primary),
                         title: Text('Active Resume: ${selectedResume.fileName}'),

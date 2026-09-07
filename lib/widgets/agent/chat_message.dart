@@ -22,10 +22,10 @@ class ChatMessage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           if (!isUser) ...[
-            CircleAvatar(
+            const CircleAvatar(
               radius: 16,
               backgroundColor: AppColors.secondary,
-              child: const Icon(Icons.smart_toy_rounded, size: 18, color: Colors.white),
+              child: Icon(Icons.smart_toy_rounded, size: 18, color: Colors.white),
             ),
             const SizedBox(width: 8),
           ],
@@ -42,7 +42,7 @@ class ChatMessage extends StatelessWidget {
                 ),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.04),
+                    color: Colors.black.withValues(alpha: 0.04),
                     blurRadius: 4,
                     offset: const Offset(0, 2),
                   ),
@@ -60,10 +60,10 @@ class ChatMessage extends StatelessWidget {
           ),
           if (isUser) ...[
             const SizedBox(width: 8),
-            CircleAvatar(
+            const CircleAvatar(
               radius: 16,
               backgroundColor: AppColors.primaryLight,
-              child: const Icon(Icons.person_rounded, size: 18, color: AppColors.primary),
+              child: Icon(Icons.person_rounded, size: 18, color: AppColors.primary),
             ),
           ],
         ],

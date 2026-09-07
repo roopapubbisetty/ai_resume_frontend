@@ -30,7 +30,7 @@ class ScoreCard extends StatelessWidget {
                   child: CircularProgressIndicator(
                     value: score / 100,
                     strokeWidth: 10,
-                    backgroundColor: color.withOpacity(0.15),
+                    backgroundColor: color.withValues(alpha: 0.15),
                     color: color,
                   ),
                 ),

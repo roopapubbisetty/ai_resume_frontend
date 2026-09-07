@@ -94,11 +94,11 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 60),
-              Wrap(
+              const Wrap(
                 spacing: 24,
                 runSpacing: 24,
                 alignment: WrapAlignment.center,
-                children: const [
+                children: [
                   _FeatureCard(
                     icon: Icons.psychology_rounded,
                     title: 'Smart Matching',

@@ -14,8 +14,8 @@ class MatchedSkillsCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              children: const [
+            const Row(
+              children: [
                 Icon(Icons.check_circle_rounded, color: AppColors.success, size: 20),
                 SizedBox(width: 8),
                 Text(
@@ -34,8 +34,8 @@ class MatchedSkillsCard extends StatelessWidget {
                 children: skills.map((skill) {
                   return Chip(
                     label: Text(skill, style: const TextStyle(fontSize: 12, color: AppColors.success)),
-                    backgroundColor: AppColors.success.withOpacity(0.1),
-                    side: BorderSide(color: AppColors.success.withOpacity(0.3)),
+                    backgroundColor: AppColors.success.withValues(alpha: 0.1),
+                    side: BorderSide(color: AppColors.success.withValues(alpha: 0.3)),
                   );
                 }).toList(),
               ),

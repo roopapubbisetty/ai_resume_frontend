@@ -23,7 +23,7 @@ class AdminSideMenu extends StatelessWidget {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
             decoration: BoxDecoration(
-              color: AppColors.secondary.withOpacity(0.1),
+              color: AppColors.secondary.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(12),
             ),
             child: const Text(
@@ -123,7 +123,7 @@ class _AdminMenuItem extends StatelessWidget {
       child: ListTile(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         selected: isSelected,
-        selectedTileColor: AppColors.secondary.withOpacity(0.12),
+        selectedTileColor: AppColors.secondary.withValues(alpha: 0.12),
         leading: Icon(
           icon,
           color: isSelected ? AppColors.secondary : AppColors.textSecondary,

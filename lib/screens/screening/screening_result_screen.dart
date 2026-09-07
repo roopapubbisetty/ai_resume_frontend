@@ -23,9 +23,9 @@ class ScreeningResultScreen extends StatelessWidget {
     final result = screeningProvider.currentResult;
 
     if (result == null) {
-      return Scaffold(
-        appBar: const DashboardAppBar(title: 'Screening Result'),
-        body: const Center(child: Text('No screening result available.')),
+      return const Scaffold(
+        appBar: DashboardAppBar(title: 'Screening Result'),
+        body: Center(child: Text('No screening result available.')),
       );
     }
 

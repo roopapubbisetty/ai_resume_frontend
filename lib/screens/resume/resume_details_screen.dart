@@ -19,9 +19,9 @@ class ResumeDetailsScreen extends StatelessWidget {
     final resume = resumeProvider.selectedResume;
 
     if (resume == null) {
-      return Scaffold(
-        appBar: const DashboardAppBar(title: 'Resume Details'),
-        body: const Center(child: Text('No resume selected.')),
+      return const Scaffold(
+        appBar: DashboardAppBar(title: 'Resume Details'),
+        body: Center(child: Text('No resume selected.')),
       );
     }
 

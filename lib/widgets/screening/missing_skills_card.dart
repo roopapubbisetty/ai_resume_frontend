@@ -14,8 +14,8 @@ class MissingSkillsCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              children: const [
+            const Row(
+              children: [
                 Icon(Icons.cancel_rounded, color: AppColors.error, size: 20),
                 SizedBox(width: 8),
                 Text(
@@ -34,8 +34,8 @@ class MissingSkillsCard extends StatelessWidget {
                 children: skills.map((skill) {
                   return Chip(
                     label: Text(skill, style: const TextStyle(fontSize: 12, color: AppColors.error)),
-                    backgroundColor: AppColors.error.withOpacity(0.1),
-                    side: BorderSide(color: AppColors.error.withOpacity(0.3)),
+                    backgroundColor: AppColors.error.withValues(alpha: 0.1),
+                    side: BorderSide(color: AppColors.error.withValues(alpha: 0.3)),
                   );
                 }).toList(),
               ),

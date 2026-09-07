@@ -12,7 +12,7 @@ class TypingIndicator extends StatelessWidget {
         children: [
           CircleAvatar(
             radius: 14,
-            backgroundColor: AppColors.secondary.withOpacity(0.2),
+            backgroundColor: AppColors.secondary.withValues(alpha: 0.2),
             child: const Icon(Icons.smart_toy_rounded, size: 16, color: AppColors.secondary),
           ),
           const SizedBox(width: 10),
@@ -23,9 +23,9 @@ class TypingIndicator extends StatelessWidget {
               borderRadius: BorderRadius.circular(12),
               border: Border.all(color: AppColors.border),
             ),
-            child: Row(
+            child: const Row(
               mainAxisSize: MainAxisSize.min,
-              children: const [
+              children: [
                 SizedBox(
                   width: 12,
                   height: 12,

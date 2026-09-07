@@ -19,8 +19,8 @@ class RecommendationCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              children: const [
+            const Row(
+              children: [
                 Icon(Icons.lightbulb_rounded, color: AppColors.warning, size: 20),
                 SizedBox(width: 8),
                 Text(

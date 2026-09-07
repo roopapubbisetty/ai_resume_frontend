@@ -83,17 +83,17 @@ class _AdminAnalyticsScreenState extends State<AdminAnalyticsScreen> {
                       ],
                     ),
                     const SizedBox(height: 24),
-                    Card(
+                    const Card(
                       child: Padding(
-                        padding: const EdgeInsets.all(20),
+                        padding: EdgeInsets.all(20),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            const Text(
+                            Text(
                               'Monthly Screening Volume',
                               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                             ),
-                            const SizedBox(height: 16),
+                            SizedBox(height: 16),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
